@@ -1,0 +1,56 @@
+body{
+  background: #f2f2f2;
+  color: #fff;
+}
+
+.head{
+  background: #34383b;
+  height: 85px;
+  display: flex;  /* щоб блоки були в ряд */
+  justify-content: space-between;
+  align-items: center;
+  transition: 500ms;
+}
+
+.head:hover{
+  background: #f00;
+}
+
+.head .logo{
+  margin-left: 48px;
+}
+
+.head .profile{
+  display: flex;  /* щоб блоки були в ряд */
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  height: 85px;
+}
+
+.head .profile .search{
+  font-size: 25;
+  color: #5d6164;
+}
+
+.head .profile .user{
+  height: 100%;
+  width: 285px;
+  background: #1e2327;
+  display: flex;  /* щоб блоки були в ряд */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head .profile .user .avatar{
+  margin-left: 25px;
+}
+
+.head .profile .user .nickname{
+  font-size: 20;
+}
+
+.head .profile .user .arrow{
+  margin-right: 45px;
+  transform: rotate(90deg);
+}

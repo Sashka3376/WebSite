@@ -1,0 +1,187 @@
+
+@grey: #f2f2f2;
+@white:#fff;
+@blue:#34383b;
+@amethyst:#96c;
+@cyan_blue:#5d6164;
+@Black_Pearl:#1e2327;
+@Conversion:#4d5f84;
+@black:#000;
+@red:#f00;
+@green:#0f0;
+@moderate_cyan-blue:#5f6f91;
+@gray98:#fafafa;
+
+body{
+  background: @grey;
+  color:@white;
+}
+
+.head{
+  z-index: 1;
+  background: @blue;
+  height: 85px;
+  display: flex;  /* щоб блоки були в ряд*/
+  justify-content: space-between;
+  align-items: center;
+  transition: 500ms;
+  position:fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 48px;
+
+
+    .image{
+      width: 40px;
+      height: 45px;
+      margin-right: 10px;
+    }
+    .text{
+        color: @white;
+        font-size: 30px;
+        font-weight: 700; //товстий шрифт
+    }
+  }
+
+  .profile{
+ display: flex;  /* щоб блоки були в ряд*/
+ justify-content: space-between;
+ align-items: center;
+ width: 350px;
+ height: 85px;
+  }
+  .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 285px;
+    height: 100%;
+    background: @Black_Pearl;
+  }
+  .search{
+      width: 32px;
+      height: 40px;
+
+      }
+    .avatar{
+      margin-left:25px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 13px;
+      }
+      .arrow{
+    margin-right: 42px;
+      }
+      .nickname{
+        font-family:  'Dux Nguyen';
+      }
+      .circle{
+        height: 10px;
+        width: 10px;
+        display:flex;
+         justify-content: center;
+         align-items: center;
+         transform: translate(38px,-50px);
+      }
+
+}
+.left_menu{
+  position: fixed;
+  top: 85px;
+  left: 0;
+  background: @Conversion;
+  width: 130px;
+  height: 100%;
+
+  .item{
+    width: 100%;
+    height: 100px;
+    display: flex;
+  //  background: @Conversion;
+    align-items: center;    //вирівнювання по вертикалі
+    justify-content: center;  //вирівнювання по горизонталі
+    transition: 200ms;
+    .name{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .text{
+        font-size: 13px;
+      }
+    }
+  }
+  .item:hover{
+    background:@moderate_cyan-blue;
+  }
+}
+
+.main{
+  background: @grey;
+  position: absolute;
+  top: 85px;
+  left: 130px;
+  right: 0;
+  .dashboard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    background: @white;
+    width: 100%;
+
+  }
+  .dashboard_text{
+     margin-left: 44px;
+  }
+      .right_cub{
+        width: 285px;
+        height: 100%;
+        background: @gray98;
+        display: flex;
+        align-items: center;
+
+      .image_report{
+
+      font-size: 25;
+      // width: 285px;
+      // height: 100%;
+      margin-left: 25px;
+      align-items: center;
+      justify-content: center;
+  }
+          .report_file_text{
+
+    }
+  }
+}
+
+  .content{
+
+    .cub{
+      height: 280px;
+      border-radius: 10px;
+      background: @red;
+      margin-left: 40px;
+       width: 344px
+       hight:280px;
+       margin-top: 33px;
+    }
+    .cub3{
+      height:528px;
+      border-radius: 10px;
+      background: @green;
+    margin-right: 5px;
+       width: 930px;
+
+       margin-top: 33px;
+    }
+
+
+
+}

@@ -1,56 +1,149 @@
-body{
+body {
   background: #f2f2f2;
-  color: #fff;
+  color: #ffffff;
 }
-
-.head{
+.head {
+  z-index: 1;
   background: #34383b;
   height: 85px;
-  display: flex;  /* щоб блоки були в ряд */
+  display: flex;
+  /* щоб блоки були в ряд*/
   justify-content: space-between;
   align-items: center;
   transition: 500ms;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
-
-.head:hover{
-  background: #f00;
-}
-
-.head .logo{
+.head .logo {
+  display: flex;
+  align-items: center;
   margin-left: 48px;
 }
-
-.head .profile{
-  display: flex;  /* щоб блоки були в ряд */
+.head .logo .image {
+  width: 40px;
+  height: 45px;
+  margin-right: 10px;
+}
+.head .logo .text {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+}
+.head .profile {
+  display: flex;
+  /* щоб блоки були в ряд*/
   justify-content: space-between;
   align-items: center;
   width: 350px;
   height: 85px;
 }
-
-.head .profile .search{
-  font-size: 25;
-  color: #5d6164;
-}
-
-.head .profile .user{
-  height: 100%;
+.head .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 285px;
+  height: 100%;
   background: #1e2327;
-  display: flex;  /* щоб блоки були в ряд */
+}
+.head .search {
+  width: 32px;
+  height: 40px;
+}
+.head .avatar {
+  margin-left: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+}
+.head .arrow {
+  margin-right: 42px;
+}
+.head .nickname {
+  font-family: 'Dux Nguyen';
+}
+.head .circle {
+  height: 10px;
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(38px, -50px);
+}
+.left_menu {
+  position: fixed;
+  top: 85px;
+  left: 0;
+  background: #4d5f84;
+  width: 130px;
+  height: 100%;
+}
+.left_menu .item {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 200ms;
+}
+.left_menu .item .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left_menu .item .name .text {
+  font-size: 13px;
+}
+.left_menu .item:hover {
+  background: #5f6f91;
+}
+.main {
+  background: #f2f2f2;
+  position: absolute;
+  top: 85px;
+  left: 130px;
+  right: 0;
+}
+.main .dashboard {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 85px;
+  background: #ffffff;
+  width: 100%;
 }
-
-.head .profile .user .avatar{
+.main .dashboard_text {
+  margin-left: 44px;
+}
+.main .right_cub {
+  width: 285px;
+  height: 100%;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+}
+.main .right_cub .image_report {
+  font-size: 25;
   margin-left: 25px;
+  align-items: center;
+  justify-content: center;
 }
-
-.head .profile .user .nickname{
-  font-size: 20;
+.content .cub {
+  height: 280px;
+  border-radius: 10px;
+  background: #ff0000;
+  margin-left: 40px;
+  width: 344px
+       hight:280px;
+  margin-top: 33px;
 }
-
-.head .profile .user .arrow{
-  margin-right: 45px;
-  transform: rotate(90deg);
+.content .cub3 {
+  height: 528px;
+  border-radius: 10px;
+  background: #00ff00;
+  margin-right: 5px;
+  width: 930px;
+  margin-top: 33px;
 }
